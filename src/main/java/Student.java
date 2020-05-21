@@ -31,10 +31,13 @@ public class Student {
     }
 
     public double getAverage() {
+        if(this.grades.size() == 0) {
+            return 0;
+        }
         double sum = 0;
         for (Integer grade: grades) {
             sum += grade;
         }
-        return sum / grades.size();
+        return sum / this.grades.size();
     }
 }

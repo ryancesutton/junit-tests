@@ -40,6 +40,7 @@ public class StudentTest {
 
     @Test
     public void testIfGetAverageWorks () {
+        assertEquals(0, ry.getAverage(), 0);
         ry.addGrade(100);
         ry.addGrade(80);
         assertEquals(90, ry.getAverage(), 0.1);
